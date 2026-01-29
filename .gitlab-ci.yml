@@ -8,5 +8,6 @@ pages:
   artifacts:
     paths:
       - public
+    expire_in: 1 week   # optional, keeps artifacts for a week
   only:
     - main
