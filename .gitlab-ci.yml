@@ -1,6 +1,7 @@
 pages:
   stage: deploy
   script:
+    - apt-get update && apt-get install -y rsync
     - rm -rf public
     - mkdir public
     - rsync -av --exclude=public . public
